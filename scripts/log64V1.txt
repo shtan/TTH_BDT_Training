@@ -1,0 +1,319 @@
+[kelmorab@nafhh-cms02]/nfs/dust/cms/user/kelmorab/Spring17Training/3makeHistosAndCards/scripts% ./train_Spring17_Spring17v1_64.sh
+6
+64
+Spring17v1
+bdtconfigs/Spring17v1/64_S17V1.txt
+NONE
+<type 'str'> ["Evt_blr_ETH_transformed", "BDT_common5_input_best_higgs_mass", "BDT_common5_input_Evt_Deta_JetsAverage", "BDT_common5_input_avg_dr_tagged_jets", "BDT_common5_input_closest_tagged_dijet_mass", "BDT_common5_input_aplanarity", "BDT_common5_input_Mlb", "BDT_common5_input_avg_btag_disc_btags", "BDT_common5_input_dEta_fn", "BDT_common5_input_all_sum_pt_with_met"]
+['BDTOptions', '!H:!V:NTrees=507:BoostType=Grad:Shrinkage=0.0228:UseBaggedBoost:GradBaggingFraction=0.571:nCuts=47:MaxDepth=2:NegWeightTreatment=IgnoreNegWeightsInTraining']
+!H:!V:NTrees=507:BoostType=Grad:Shrinkage=0.0228:UseBaggedBoost:GradBaggingFraction=0.571:nCuts=47:MaxDepth=2:NegWeightTreatment=IgnoreNegWeightsInTraining
+Training Final BDT
+--- Factory                  : Parsing option string: 
+--- Factory                  : ... "V:!Silent:Color:DrawProgressBar:Transformations=I:AnalysisType=Classification"
+--- Factory                  : The following options are set:
+--- Factory                  : - By User:
+--- Factory                  :     V: "True" [Verbose flag]
+--- Factory                  :     Color: "True" [Flag for coloured screen output (default: True, if in batch mode: False)]
+--- Factory                  :     Transformations: "I" [List of transformations to test; formatting example: "Transformations=I;D;P;U;G,D", for identity, decorrelation, PCA, Uniform and Gaussianisation followed by decorrelation transformations]
+--- Factory                  :     Silent: "False" [Batch mode: boolean silent flag inhibiting any output from TMVA after the creation of the factory class object (default: False)]
+--- Factory                  :     DrawProgressBar: "True" [Draw progress bar to display training, testing and evaluation schedule (default: True)]
+--- Factory                  :     AnalysisType: "Classification" [Set the analysis type (Classification, Regression, Multiclass, Auto) (default: Auto)]
+--- Factory                  : - Default:
+--- Factory                  :     <none>
+--- Factory                  : You are running ROOT Version: 6.02/05, Feb 9, 2015
+--- Factory                  : 
+--- Factory                  : _/_/_/_/_/ _|      _|  _|      _|    _|_|   
+--- Factory                  :    _/      _|_|  _|_|  _|      _|  _|    _| 
+--- Factory                  :   _/       _|  _|  _|  _|      _|  _|_|_|_| 
+--- Factory                  :  _/        _|      _|    _|  _|    _|    _| 
+--- Factory                  : _/         _|      _|      _|      _|    _| 
+--- Factory                  : 
+--- Factory                  : ___________TMVA Version 4.2.0, Sep 19, 2013
+--- Factory                  : 
+/nfs/dust/cms/user/kelmorab/SplitTrees2702_Spring17_V3/Category_64/Odd/ttHbb_*_nominal.root
+/nfs/dust/cms/user/kelmorab/SplitTrees2702_Spring17_V3/Category_64/Odd/ttbar_*_nominal.root
+using extra test trees
+/nfs/dust/cms/user/kelmorab/SplitTrees2702_Spring17_V3/Category_64/Even/ttHbb_*_nominal.root
+/nfs/dust/cms/user/kelmorab/SplitTrees2702_Spring17_V3/Category_64/Even/ttbar_*_nominal.root
+init extra trees
+<ROOT.TChain object ("MVATree") at 0x3d0af50> <ROOT.TChain object ("MVATree") at 0x3d28230>
+test chains
+<ROOT.TChain object ("MVATree") at 0x3d25da0> <ROOT.TChain object ("MVATree") at 0x3d26820>
+--- DataSetInfo              : Added class "Signal"	 with internal class number 0
+--- Factory                  : Add Tree MVATree of type Signal with 12906 events
+--- DataSetInfo              : Added class "Background"	 with internal class number 1
+--- Factory                  : Add Tree MVATree of type Background with 8857 events
+--- Factory                  : Add Tree MVATree of type Signal with 12783 events
+--- Factory                  : Add Tree MVATree of type Background with 8715 events
+Weight_XS*Weight_PU*Weight_CSV
+Weight_XS*Weight_PU*Weight_CSV
+Weight_XS*Weight_PU*Weight_CSV Weight_XS*Weight_PU*Weight_CSV
+--- Factory                  : Preparing trees for training and testing...
+--- Factory                  : Booking method: BDTG
+--- DataSetFactory           : Parsing option string: 
+--- DataSetFactory           : ... "SplitMode=Random:NormMode=EqualNumEvents:V:VerboseLevel=Verbose"
+--- DataSetFactory           : The following options are set:
+--- DataSetFactory           : - By User:
+--- DataSetFactory           :     SplitMode: "Random" [Method of picking training and testing events (default: random)]
+--- DataSetFactory           :     NormMode: "EqualNumEvents" [Overall renormalisation of  event-by-event weights used in the training (NumEvents: average weight of 1 per event, independently for signal and background; EqualNumEvents: average weight of 1 per event for signal, and sum of weights for background equal to sum of weights for signal)]
+--- DataSetFactory           :     V: "True" [Verbosity (default: true)]
+--- DataSetFactory           :     VerboseLevel: "Verbose" [VerboseLevel (Debug/Verbose/Info)]
+--- DataSetFactory           : - Default:
+--- DataSetFactory           :     MixMode: "SameAsSplitMode" [Method of mixing events of differnt classes into one dataset (default: SameAsSplitMode)]
+--- DataSetFactory           :     SplitSeed: "100" [Seed for random event shuffling]
+--- DataSetFactory           :     ScaleWithPreselEff: "False" [Scale the number of requested events by the eff. of the preselection cuts (or not)]
+--- DataSetFactory           :     nTrain_Signal: "0" [Number of training events of class Signal (default: 0 = all)]
+--- DataSetFactory           :     nTest_Signal: "0" [Number of test events of class Signal (default: 0 = all)]
+--- DataSetFactory           :     nTrain_Background: "0" [Number of training events of class Background (default: 0 = all)]
+--- DataSetFactory           :     nTest_Background: "0" [Number of test events of class Background (default: 0 = all)]
+--- DataSetFactory           : Splitmode is: "RANDOM" the mixmode is: "SAMEASSPLITMODE"
+--- DataSetFactory           : Create training and testing trees -- looping over class "Signal" ...
+--- DataSetFactory           : Weight expression for class 'Signal': "Weight_XS*Weight_PU*Weight_CSV"
+--- DataSetFactory           : Create training and testing trees -- looping over class "Background" ...
+--- DataSetFactory           : Weight expression for class 'Background': "Weight_XS*Weight_PU*Weight_CSV*1.0"
+--- DataSetFactory           : Number of events in input trees (after possible flattening of arrays):
+--- DataSetFactory           :     Signal          -- number of events       : 25689  / sum of weights: 1.71215
+--- DataSetFactory           :     Background      -- number of events       : 17572  / sum of weights: 37.4599
+--- DataSetFactory           :     Signal     tree -- total number of entries: 25689
+--- DataSetFactory           :     Background tree -- total number of entries: 17572
+--- DataSetFactory           : Preselection: (will NOT affect number of requested training and testing events)
+--- DataSetFactory           :     No preselection cuts applied on event classes
+--- DataSetFactory           : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+--- DataSetFactory           :  such that the effective (weighted) number of events in each class is the same 
+--- DataSetFactory           :  (and equals the number of events (entries) given for class=0 )
+--- DataSetFactory           : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+--- DataSetFactory           : ... (note that N_j is the sum of TRAINING events
+--- DataSetFactory           :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+--- DataSetFactory           : --> Rescale Signal     event weights by factor: 15029.3
+--- DataSetFactory           : --> Rescale Background event weights by factor: 682.285
+--- DataSetFactory           : Number of training and testing events after rescaling:
+--- DataSetFactory           : ------------------------------------------------------
+--- DataSetFactory           : Signal     -- training events            : 12906 (sum of weights: 12906) - requested were 0 events
+--- DataSetFactory           : Signal     -- testing events             : 12783 (sum of weights: 0.853431) - requested were 0 events
+--- DataSetFactory           : Signal     -- training and testing events: 25689 (sum of weights: 12906.9)
+--- DataSetFactory           : Background -- training events            : 8857 (sum of weights: 12906) - requested were 0 events
+--- DataSetFactory           : Background -- testing events             : 8715 (sum of weights: 18.544) - requested were 0 events
+--- DataSetFactory           : Background -- training and testing events: 17572 (sum of weights: 12924.5)
+--- DataSetFactory           : Create internal training tree
+--- DataSetFactory           : Create internal testing tree
+--- DataSetInfo              : Correlation matrix (Signal):
+--- DataSetInfo              : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              :                                              Evt_blr_ETH_transformed BDT_common5_input_best_higgs_mass BDT_common5_input_Evt_Deta_JetsAverage BDT_common5_input_avg_dr_tagged_jets BDT_common5_input_closest_tagged_dijet_mass BDT_common5_input_aplanarity BDT_common5_input_Mlb BDT_common5_input_avg_btag_disc_btags BDT_common5_input_dEta_fn BDT_common5_input_all_sum_pt_with_met
+--- DataSetInfo              :                     Evt_blr_ETH_transformed:                  +1.000                            -0.003                                 -0.072                               -0.020                                      +0.047                       +0.027                -0.015                                +0.812                    -0.019                                -0.046
+--- DataSetInfo              :           BDT_common5_input_best_higgs_mass:                  -0.003                            +1.000                                 +0.160                               +0.225                                      +0.321                       -0.185                +0.176                                -0.071                    +0.118                                +0.385
+--- DataSetInfo              :      BDT_common5_input_Evt_Deta_JetsAverage:                  -0.072                            +0.160                                 +1.000                               +0.427                                      +0.148                       -0.312                +0.053                                -0.039                    +0.373                                +0.052
+--- DataSetInfo              :        BDT_common5_input_avg_dr_tagged_jets:                  -0.020                            +0.225                                 +0.427                               +1.000                                      +0.293                       -0.100                -0.053                                -0.025                    +0.317                                -0.147
+--- DataSetInfo              : BDT_common5_input_closest_tagged_dijet_mass:                  +0.047                            +0.321                                 +0.148                               +0.293                                      +1.000                       -0.131                +0.122                                +0.002                    +0.052                                +0.377
+--- DataSetInfo              :                BDT_common5_input_aplanarity:                  +0.027                            -0.185                                 -0.312                               -0.100                                      -0.131                       +1.000                -0.084                                +0.044                    -0.119                                -0.311
+--- DataSetInfo              :                       BDT_common5_input_Mlb:                  -0.015                            +0.176                                 +0.053                               -0.053                                      +0.122                       -0.084                +1.000                                -0.036                    +0.034                                +0.250
+--- DataSetInfo              :       BDT_common5_input_avg_btag_disc_btags:                  +0.812                            -0.071                                 -0.039                               -0.025                                      +0.002                       +0.044                -0.036                                +1.000                    -0.015                                -0.049
+--- DataSetInfo              :                   BDT_common5_input_dEta_fn:                  -0.019                            +0.118                                 +0.373                               +0.317                                      +0.052                       -0.119                +0.034                                -0.015                    +1.000                                -0.067
+--- DataSetInfo              :       BDT_common5_input_all_sum_pt_with_met:                  -0.046                            +0.385                                 +0.052                               -0.147                                      +0.377                       -0.311                +0.250                                -0.049                    -0.067                                +1.000
+--- DataSetInfo              : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              : Correlation matrix (Background):
+--- DataSetInfo              : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              :                                              Evt_blr_ETH_transformed BDT_common5_input_best_higgs_mass BDT_common5_input_Evt_Deta_JetsAverage BDT_common5_input_avg_dr_tagged_jets BDT_common5_input_closest_tagged_dijet_mass BDT_common5_input_aplanarity BDT_common5_input_Mlb BDT_common5_input_avg_btag_disc_btags BDT_common5_input_dEta_fn BDT_common5_input_all_sum_pt_with_met
+--- DataSetInfo              :                     Evt_blr_ETH_transformed:                  +1.000                            -0.003                                 -0.060                               -0.040                                      +0.011                       +0.040                +0.014                                +0.845                    -0.031                                -0.022
+--- DataSetInfo              :           BDT_common5_input_best_higgs_mass:                  -0.003                            +1.000                                 +0.149                               +0.266                                      +0.356                       -0.209                +0.144                                -0.051                    +0.028                                +0.444
+--- DataSetInfo              :      BDT_common5_input_Evt_Deta_JetsAverage:                  -0.060                            +0.149                                 +1.000                               +0.574                                      +0.127                       -0.344                +0.031                                -0.053                    +0.420                                -0.048
+--- DataSetInfo              :        BDT_common5_input_avg_dr_tagged_jets:                  -0.040                            +0.266                                 +0.574                               +1.000                                      +0.320                       -0.187                -0.040                                -0.059                    +0.394                                -0.097
+--- DataSetInfo              : BDT_common5_input_closest_tagged_dijet_mass:                  +0.011                            +0.356                                 +0.127                               +0.320                                      +1.000                       -0.113                +0.085                                -0.042                    +0.041                                +0.390
+--- DataSetInfo              :                BDT_common5_input_aplanarity:                  +0.040                            -0.209                                 -0.344                               -0.187                                      -0.113                       +1.000                -0.056                                +0.064                    -0.165                                -0.232
+--- DataSetInfo              :                       BDT_common5_input_Mlb:                  +0.014                            +0.144                                 +0.031                               -0.040                                      +0.085                       -0.056                +1.000                                -0.005                    +0.026                                +0.224
+--- DataSetInfo              :       BDT_common5_input_avg_btag_disc_btags:                  +0.845                            -0.051                                 -0.053                               -0.059                                      -0.042                       +0.064                -0.005                                +1.000                    -0.027                                -0.010
+--- DataSetInfo              :                   BDT_common5_input_dEta_fn:                  -0.031                            +0.028                                 +0.420                               +0.394                                      +0.041                       -0.165                +0.026                                -0.027                    +1.000                                -0.109
+--- DataSetInfo              :       BDT_common5_input_all_sum_pt_with_met:                  -0.022                            +0.444                                 -0.048                               -0.097                                      +0.390                       -0.232                +0.224                                -0.010                    -0.109                                +1.000
+--- DataSetInfo              : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetFactory           :  
+--- Factory                  : 
+--- Factory                  : current transformation string: 'I'
+--- Factory                  : Create Transformation "I" with events from all classes.
+--- Id                       : Transformation, Variable selection : 
+--- Id                       : Input : variable 'Evt_blr_ETH_transformed' (index=0).   <---> Output : variable 'Evt_blr_ETH_transformed' (index=0).
+--- Id                       : Input : variable 'BDT_common5_input_best_higgs_mass' (index=1).   <---> Output : variable 'BDT_common5_input_best_higgs_mass' (index=1).
+--- Id                       : Input : variable 'BDT_common5_input_Evt_Deta_JetsAverage' (index=2).   <---> Output : variable 'BDT_common5_input_Evt_Deta_JetsAverage' (index=2).
+--- Id                       : Input : variable 'BDT_common5_input_avg_dr_tagged_jets' (index=3).   <---> Output : variable 'BDT_common5_input_avg_dr_tagged_jets' (index=3).
+--- Id                       : Input : variable 'BDT_common5_input_closest_tagged_dijet_mass' (index=4).   <---> Output : variable 'BDT_common5_input_closest_tagged_dijet_mass' (index=4).
+--- Id                       : Input : variable 'BDT_common5_input_aplanarity' (index=5).   <---> Output : variable 'BDT_common5_input_aplanarity' (index=5).
+--- Id                       : Input : variable 'BDT_common5_input_Mlb' (index=6).   <---> Output : variable 'BDT_common5_input_Mlb' (index=6).
+--- Id                       : Input : variable 'BDT_common5_input_avg_btag_disc_btags' (index=7).   <---> Output : variable 'BDT_common5_input_avg_btag_disc_btags' (index=7).
+--- Id                       : Input : variable 'BDT_common5_input_dEta_fn' (index=8).   <---> Output : variable 'BDT_common5_input_dEta_fn' (index=8).
+--- Id                       : Input : variable 'BDT_common5_input_all_sum_pt_with_met' (index=9).   <---> Output : variable 'BDT_common5_input_all_sum_pt_with_met' (index=9).
+--- Id                       : Preparing the Identity transformation...
+--- TFHandler_Factory        : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        :                                    Variable                                           Mean                                           RMS                                   [        Min                                           Max ]
+--- TFHandler_Factory        : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        :                     Evt_blr_ETH_transformed:                                       7.0438                                       1.4826   [                                      -2.3424                                       12.111 ]
+--- TFHandler_Factory        :           BDT_common5_input_best_higgs_mass:                                       203.42                                       175.35   [                                       19.002                                       3528.0 ]
+--- TFHandler_Factory        :      BDT_common5_input_Evt_Deta_JetsAverage:                                       1.1163                                      0.35874   [                                      0.12678                                       2.3857 ]
+--- TFHandler_Factory        :        BDT_common5_input_avg_dr_tagged_jets:                                       2.1582                                      0.35593   [                                      0.67201                                       3.8541 ]
+--- TFHandler_Factory        : BDT_common5_input_closest_tagged_dijet_mass:                                       85.477                                       45.937   [                                       16.960                                       753.05 ]
+--- TFHandler_Factory        :                BDT_common5_input_aplanarity:                                     0.099032                                     0.068487   [                                   0.00094233                                      0.44503 ]
+--- TFHandler_Factory        :                       BDT_common5_input_Mlb:                                       87.467                                       41.303   [                                       14.983                                       701.55 ]
+--- TFHandler_Factory        :       BDT_common5_input_avg_btag_disc_btags:                                      0.95074                                     0.023283   [                                      0.85922                                      0.99895 ]
+--- TFHandler_Factory        :                   BDT_common5_input_dEta_fn:                                       1.1582                                      0.84327   [                                    0.0054520                                       6.6746 ]
+--- TFHandler_Factory        :       BDT_common5_input_all_sum_pt_with_met:                                       796.00                                       321.11   [                                       286.91                                       3825.3 ]
+--- TFHandler_Factory        : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        : Plot event variables for Id
+--- TFHandler_Factory        : Create scatter and profile plots in target-file directory: 
+--- TFHandler_Factory        : autotrain.root:/InputVariables_Id/CorrelationPlots
+--- TFHandler_Factory        :  
+--- TFHandler_Factory        : Ranking input variables (method unspecific)...
+--- IdTransformation         : Ranking result (top variable is best ranked)
+--- IdTransformation         : --------------------------------------------------------------------
+--- IdTransformation         : Rank : Variable                                    : Separation
+--- IdTransformation         : --------------------------------------------------------------------
+--- IdTransformation         :    1 : BDT_common5_input_Evt_Deta_JetsAverage      : 6.590e-02
+--- IdTransformation         :    2 : BDT_common5_input_avg_dr_tagged_jets        : 6.141e-02
+--- IdTransformation         :    3 : Evt_blr_ETH_transformed                     : 5.193e-02
+--- IdTransformation         :    4 : BDT_common5_input_avg_btag_disc_btags       : 4.796e-02
+--- IdTransformation         :    5 : BDT_common5_input_dEta_fn                   : 3.843e-02
+--- IdTransformation         :    6 : BDT_common5_input_best_higgs_mass           : 3.129e-02
+--- IdTransformation         :    7 : BDT_common5_input_aplanarity                : 2.191e-02
+--- IdTransformation         :    8 : BDT_common5_input_closest_tagged_dijet_mass : 2.161e-02
+--- IdTransformation         :    9 : BDT_common5_input_all_sum_pt_with_met       : 7.963e-03
+--- IdTransformation         :   10 : BDT_common5_input_Mlb                       : 3.683e-03
+--- IdTransformation         : --------------------------------------------------------------------
+--- Factory                  :  
+--- Factory                  : Train all methods for Classification ...
+--- Factory                  : Train method: BDTG for Classification
+--- BDTG                     : Begin training
+--- BDTG                     :  found and suggest the following possible pre-selection cuts 
+--- BDTG                     : as option DoPreselection was not used, these cuts however will not be performed, but the training will see the full sample
+--- BDTG                     : <InitEventSample> For classification trees, 
+--- BDTG                     :  the effective number of backgrounds is scaled to match 
+--- BDTG                     :  the signal. Othersise the first boosting step would do 'just that'!
+--- BDTG                     : re-normlise events such that Sig and Bkg have respective sum of weights = 1
+--- BDTG                     :   sig->sig*0.843135ev. bkg->bkg*0.843135ev.
+--- BDTG                     : #events: (reweighted) sig: 10881.5 bkg: 10881.5
+--- BDTG                     : #events: (unweighted) sig: 12906 bkg: 8857
+--- BDTG                     : Training 507 Decision Trees ... patience please
+--- BinaryTree               : The minimal node size MinNodeSize=5 fMinNodeSize=5% is translated to an actual number of events = 628.05 for the training sample size of 12561
+--- BinaryTree               : Note: This number will be taken as absolute minimum in the node, 
+--- BinaryTree               :       in terms of 'weighted events' and unweighted ones !! 
+--- BDTG                     : <Train> elapsed time: 23.6 sec                              
+--- BDTG                     : <Train> average number of nodes (w/o pruning) : 6
+--- BDTG                     : End of training                                              
+--- BDTG                     : Elapsed time for training with 21763 events: 23.9 sec         
+--- BDTG                     : Create MVA output for classification on training sample
+--- BDTG                     : Evaluation of BDTG on training sample (21763 events)
+--- BDTG                     : Elapsed time for evaluation of 21763 events: 2.94 sec       
+--- BDTG                     : Creating weight file in xml format: weights/TMVAClassification_BDTG.weights.xml
+--- BDTG                     : Creating standalone response class: weights/TMVAClassification_BDTG.class.C
+--- BDTG                     : Write monitoring histograms to file: autotrain.root:/Method_BDT/BDTG
+--- Factory                  : Training finished
+--- Factory                  : 
+--- Factory                  : Ranking input variables (method specific)...
+--- BDTG                     : Ranking result (top variable is best ranked)
+--- BDTG                     : -----------------------------------------------------------------------------
+--- BDTG                     : Rank : Variable                                    : Variable Importance
+--- BDTG                     : -----------------------------------------------------------------------------
+--- BDTG                     :    1 : BDT_common5_input_closest_tagged_dijet_mass : 1.400e-01
+--- BDTG                     :    2 : BDT_common5_input_best_higgs_mass           : 1.304e-01
+--- BDTG                     :    3 : BDT_common5_input_Evt_Deta_JetsAverage      : 1.202e-01
+--- BDTG                     :    4 : BDT_common5_input_avg_dr_tagged_jets        : 1.089e-01
+--- BDTG                     :    5 : Evt_blr_ETH_transformed                     : 9.743e-02
+--- BDTG                     :    6 : BDT_common5_input_avg_btag_disc_btags       : 9.733e-02
+--- BDTG                     :    7 : BDT_common5_input_dEta_fn                   : 8.711e-02
+--- BDTG                     :    8 : BDT_common5_input_aplanarity                : 7.893e-02
+--- BDTG                     :    9 : BDT_common5_input_all_sum_pt_with_met       : 7.543e-02
+--- BDTG                     :   10 : BDT_common5_input_Mlb                       : 6.425e-02
+--- BDTG                     : -----------------------------------------------------------------------------
+--- Factory                  : 
+--- Factory                  : === Destroy and recreate all methods via weight files for testing ===
+--- Factory                  : 
+--- MethodBase               : Reading weight file: weights/TMVAClassification_BDTG.weights.xml
+--- BDTG                     : Read method "BDTG" of type "BDT"
+--- BDTG                     : MVA method was trained with TMVA Version: 4.2.0
+--- BDTG                     : MVA method was trained with ROOT Version: 6.02/05
+--- Factory                  : Test all methods...
+--- Factory                  : Test method: BDTG for Classification performance
+--- BDTG                     : Evaluation of BDTG on testing sample (21498 events)
+--- BDTG                     : Elapsed time for evaluation of 21498 events: 2.81 sec       
+--- Factory                  : Evaluate all methods...
+--- Factory                  : Evaluate classifier: BDTG
+--- BDTG                     : Loop over test events and fill histograms with classifier response...
+--- Factory                  : Write evaluation histograms to file
+--- TFHandler_BDTG           : Plot event variables for BDTG
+--- TFHandler_BDTG           : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_BDTG           :                                    Variable                                           Mean                                           RMS                                   [        Min                                           Max ]
+--- TFHandler_BDTG           : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_BDTG           :                     Evt_blr_ETH_transformed:                                       6.7411                                       1.4562   [                                      -1.8302                                       11.882 ]
+--- TFHandler_BDTG           :           BDT_common5_input_best_higgs_mass:                                       218.70                                       193.82   [                                       18.462                                       3276.9 ]
+--- TFHandler_BDTG           :      BDT_common5_input_Evt_Deta_JetsAverage:                                       1.2023                                      0.36738   [                                     0.090295                                       2.4603 ]
+--- TFHandler_BDTG           :        BDT_common5_input_avg_dr_tagged_jets:                                       2.2332                                      0.37560   [                                      0.63780                                       3.5692 ]
+--- TFHandler_BDTG           : BDT_common5_input_closest_tagged_dijet_mass:                                       84.514                                       49.655   [                                       16.764                                       846.27 ]
+--- TFHandler_BDTG           :                BDT_common5_input_aplanarity:                                     0.091589                                     0.064491   [                                    0.0017402                                      0.46415 ]
+--- TFHandler_BDTG           :                       BDT_common5_input_Mlb:                                       89.094                                       41.021   [                                       15.291                                       636.93 ]
+--- TFHandler_BDTG           :       BDT_common5_input_avg_btag_disc_btags:                                      0.94575                                     0.023707   [                                      0.85887                                      0.99884 ]
+--- TFHandler_BDTG           :                   BDT_common5_input_dEta_fn:                                       1.3100                                      0.90283   [                                    0.0017733                                       6.2653 ]
+--- TFHandler_BDTG           :       BDT_common5_input_all_sum_pt_with_met:                                       783.68                                       319.79   [                                       297.16                                       3729.9 ]
+--- TFHandler_BDTG           : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_BDTG           : Create scatter and profile plots in target-file directory: 
+--- TFHandler_BDTG           : autotrain.root:/Method_BDT/BDTG/CorrelationPlots
+--- Factory                  : Correlations between input variables and MVA response (signal):
+--- Factory                  : ----------------
+--- Factory                  :                                                 BDTG
+--- Factory                  :                     Evt_blr_ETH_transformed:  +0.534
+--- Factory                  :           BDT_common5_input_best_higgs_mass:  -0.253
+--- Factory                  :      BDT_common5_input_Evt_Deta_JetsAverage:  -0.591
+--- Factory                  :        BDT_common5_input_avg_dr_tagged_jets:  -0.428
+--- Factory                  : BDT_common5_input_closest_tagged_dijet_mass:  +0.067
+--- Factory                  :                BDT_common5_input_aplanarity:  +0.307
+--- Factory                  :                       BDT_common5_input_Mlb:  -0.067
+--- Factory                  :       BDT_common5_input_avg_btag_disc_btags:  +0.535
+--- Factory                  :                   BDT_common5_input_dEta_fn:  -0.427
+--- Factory                  :       BDT_common5_input_all_sum_pt_with_met:  +0.035
+--- Factory                  : ----------------
+--- Factory                  : 
+--- Factory                  : Correlations between input variables and MVA response (background):
+--- Factory                  : ----------------
+--- Factory                  :                                                 BDTG
+--- Factory                  :                     Evt_blr_ETH_transformed:  +0.495
+--- Factory                  :           BDT_common5_input_best_higgs_mass:  -0.228
+--- Factory                  :      BDT_common5_input_Evt_Deta_JetsAverage:  -0.660
+--- Factory                  :        BDT_common5_input_avg_dr_tagged_jets:  -0.579
+--- Factory                  : BDT_common5_input_closest_tagged_dijet_mass:  -0.006
+--- Factory                  :                BDT_common5_input_aplanarity:  +0.352
+--- Factory                  :                       BDT_common5_input_Mlb:  -0.054
+--- Factory                  :       BDT_common5_input_avg_btag_disc_btags:  +0.502
+--- Factory                  :                   BDT_common5_input_dEta_fn:  -0.461
+--- Factory                  :       BDT_common5_input_all_sum_pt_with_met:  +0.094
+--- Factory                  : ----------------
+--- Factory                  : 
+--- Factory                  : The following "overlap" matrices contain the fraction of events for which 
+--- Factory                  : the MVAs 'i' and 'j' have returned conform answers about "signal-likeness"
+--- Factory                  : An event is signal-like, if its MVA output exceeds the following value:
+--- Factory                  : --------------------
+--- Factory                  :  Method:  Cut value:
+--- Factory                  : --------------------
+--- Factory                  :    BDTG:     +0.013
+--- Factory                  : --------------------
+--- Factory                  : which correspond to the working point: eff(signal) = 1 - eff(background)
+--- Factory                  : 
+--- Factory                  : Evaluation results ranked by best signal efficiency and purity (area)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : MVA              Signal efficiency at bkg eff.(error):       | Sepa-    Signifi- 
+--- Factory                  : Method:          @B=0.01    @B=0.10    @B=0.30    ROC-integ. | ration:  cance:   
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : BDTG           : 0.073(281)  0.317(503)  0.620(525)    0.724    | 0.154    0.602
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : 
+--- Factory                  : Testing efficiency compared to training efficiency (overtraining check)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : MVA              Signal efficiency: from test sample (from training sample) 
+--- Factory                  : Method:          @B=0.01             @B=0.10            @B=0.30   
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : BDTG           : 0.073 (0.069)       0.317 (0.326)      0.620 (0.619)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : 
+--- Dataset:Default          : Created tree 'TestTree' with 21498 events
+--- Dataset:Default          : Created tree 'TrainTree' with 21763 events
+--- Factory                  :   
+--- Factory                  : Thank you for using TMVA!
+--- Factory                  : For citation information, please visit: http://tmva.sf.net/citeTMVA.html
+ROC: 0.724534584938
+Separation: 0.154666185951
+KS: 0.0686090458868
+all done
+
