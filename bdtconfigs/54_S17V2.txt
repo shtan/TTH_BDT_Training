@@ -1,0 +1,2 @@
+variables=['BDT_common5_input_closest_tagged_dijet_mass', 'BDT_common5_input_avg_dr_tagged_jets', 'BDT_common5_input_avg_btag_disc_btags', 'BDT_common5_input_h1', 'BDT_common5_input_Evt_Deta_JetsAverage', 'BDT_common5_input_maxeta_jet_jet', 'Evt_blr_ETH_transformed', 'BDT_common5_input_sphericity']
+BDTOptions=!H:!V:NTrees=875:BoostType=Grad:Shrinkage=0.021:UseBaggedBoost:GradBaggingFraction=0.47:nCuts=30:MaxDepth=2:NegWeightTreatment=IgnoreNegWeightsInTraining

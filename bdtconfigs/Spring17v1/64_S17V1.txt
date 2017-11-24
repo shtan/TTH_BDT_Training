@@ -1,2 +1,0 @@
-variables=['Evt_blr_ETH_transformed', 'BDT_common5_input_best_higgs_mass', 'BDT_common5_input_Evt_Deta_JetsAverage', 'BDT_common5_input_avg_dr_tagged_jets', 'BDT_common5_input_closest_tagged_dijet_mass', 'BDT_common5_input_aplanarity', 'BDT_common5_input_Mlb', 'BDT_common5_input_avg_btag_disc_btags', 'BDT_common5_input_dEta_fn', 'BDT_common5_input_all_sum_pt_with_met']
-BDTOptions=!H:!V:NTrees=507:BoostType=Grad:Shrinkage=0.0228:UseBaggedBoost:GradBaggingFraction=0.571:nCuts=47:MaxDepth=2:NegWeightTreatment=IgnoreNegWeightsInTraining

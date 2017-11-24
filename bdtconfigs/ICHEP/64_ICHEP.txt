@@ -1,2 +1,0 @@
-variables=['BDT_common5_input_best_higgs_mass', 'BDT_common5_input_tagged_dijet_mass_closest_to_125', 'BDT_common5_input_invariant_mass_of_everything', 'BDT_common5_input_fourth_highest_btag', 'BDT_common5_input_all_sum_pt_with_met', 'BDT_common5_input_fifth_highest_CSV']
-BDTOptions=!H:!V:NTrees=932:BoostType=Grad:Shrinkage=0.0166:UseBaggedBoost:GradBaggingFraction=0.51:nCuts=46:MaxDepth=2:NegWeightTreatment=IgnoreNegWeightsInTraining

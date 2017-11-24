@@ -16,8 +16,8 @@ if len(sys.argv)<6 or len(sys.argv)>6:
   print "CATEGORY = for example 43 or 62 or DB or so "
   print "NAME = name of outputfiles "
   print "FINALBDTCONFIG_FILE = BDT config file e.g. see example files "
-  print "INPUTPATH = path to input trees prepared in ../1PrepareSamples. Has to contain directories called Category_*/* "
-  print "[test | train] = do limit on test or trainings samples "
+  print "INPUTPATH = path to input trees . Has to contain directories called Category_*/* "
+  print "[test | train] = do Testing on test or trainings samples "
   print "\n output is out in ./output/"
   exit(0)
   
@@ -44,7 +44,6 @@ f = open("output/TrainAndEval_"+name+".txt","w")
 
 evaluationPath=AnaPath+"/Category_"+category+"/Even/"
 trainingPath=AnaPath+"/Category_"+category+"/Odd/"
-
 
 if doTestonTrain==True:
   print "!!!!!!!!!!DOING EVALUATION ON TRAINING SAMPLE!!!!!!!!"
@@ -110,9 +109,3 @@ call(["cp",infname,outfname])
 print "all done"
 
 exit(0)
-
-print "Writing FinalBDT output"
-weightfileFinal=trainerFinal.weightfile
-evaluaterFinal=Evaluater(weightfileFinal,variablesFinal,samplesTrainingFinal,[],[])
-evaluaterFinal.WriteBDTVars("","_FinalBDT","Final")
-
