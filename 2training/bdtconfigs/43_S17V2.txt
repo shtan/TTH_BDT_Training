@@ -1,0 +1,2 @@
+variables= ['BDT_common5_input_aplanarity', 'BDT_common5_input_avg_btag_disc_btags', 'BDT_common5_input_all_sum_pt_with_met', 'BDT_common5_input_h1', 'BDT_common5_input_h2', 'BDT_common5_input_HT', 'BDT_common5_input_avg_dr_tagged_jets']
+BDTOptions=!H:!V:NTrees=1032:BoostType=Grad:Shrinkage=0.033:UseBaggedBoost:GradBaggingFraction=0.52:nCuts=48:MaxDepth=2:NegWeightTreatment=IgnoreNegWeightsInTraining
