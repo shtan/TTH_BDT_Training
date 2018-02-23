@@ -25,8 +25,9 @@ Then you need a config file that describes the gradient boosting BDT -> see bdtc
 to train do:
 python OnlyTrain.py CATEORY NAMEFORTRAINING BDTCONFIGFILE PATHTONTUPLES test|train
 e.g.
-python OnlyTrain.py 43 Spring17v1 bdtconfigs/Spring17v1/43_S17V1.txt /nfs/dust/cms/user/kelmorab/SplitTrees2702_Spring17_V3 test
+python OnlyTrain.py 43 Spring17v1 bdtconfigs/43_S17V2.txt /nfs/dust/cms/user/kelmorab/SplitTrees04102017 test
 
-with test|train you can specifiy that the ROC and KS are calculated using the test or the trainings data (even/odd)
-
+# fyi 
+# with test|train you can specifiy that the ROC and KS are calculated using the test or the trainings data (even/odd)
+# no reason to change that usually
 
