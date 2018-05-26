@@ -1,0 +1,6 @@
+TrainingsPath: /eos/user/s/shtan/storageforbatch/stage35stuff/apr2/combined/
+EvalPath: /eos/user/s/shtan/storageforbatch/stage35stuff/apr2/combined/
+
+FinalBDT Variables:
+['BDT_common5_input_HT', 'BDT_common5_input_h0', 'BDT_common5_input_Mlb', 'BDT_common5_input_pt_all_jets_over_E_all_jets', 'BDT_common5_input_h1', 'Evt_Deta_TaggedJetsAverage', 'BDT_common5_input_tagged_dijet_mass_closest_to_125', 'BDT_common5_input_closest_tagged_dijet_mass', 'BDT_common5_input_avg_btag_disc_btags']
+

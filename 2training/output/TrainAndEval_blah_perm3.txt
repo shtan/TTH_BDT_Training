@@ -1,0 +1,10 @@
+TrainingsPath: /eos/user/s/shtan/storageforbatch/stage35stuff/apr2/combined/
+EvalPath: /eos/user/s/shtan/storageforbatch/stage35stuff/apr2/combined/
+
+FinalBDT Variables:
+['BDT_common5_input_pt_all_jets_over_E_all_jets', 'BDT_common5_input_fourth_highest_btag', 'BDT_common5_input_h0', 'BDT_common5_input_Mlb', 'Evt_Deta_TaggedJetsAverage', 'BDT_common5_input_maxeta_tag_tag', 'Evt_M2_TaggedJetsAverage']
+
+FinalBDT Parameters:
+!H:!V:NTrees=752:BoostType=Grad:Shrinkage=0.023:UseBaggedBoost:GradBaggingFraction=0.29:nCuts=39:MaxDepth=2:NegWeightTreatment=IgnoreNegWeightsInTraining
+
+

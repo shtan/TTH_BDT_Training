@@ -1,0 +1,9 @@
+TrainingsPath: /eos/user/s/shtan/storageforbatch/stage35stuff/apr2/combined2/
+EvalPath: /eos/user/s/shtan/storageforbatch/stage35stuff/apr2/combined2/
+
+FinalBDT Variables:
+['BDT_common5_input_avg_dr_tagged_jets', 'Evt_blr_ETH_transformed', 'BDT_common5_input_Evt_Deta_JetsAverage', 'BDT_common5_input_best_higgs_mass', 'BDT_common5_input_closest_tagged_dijet_mass', 'BDT_common5_input_dEta_fn', 'BDT_common5_input_aplanarity', 'BDT_common5_input_h0', 'BDT_common5_input_avg_btag_disc_btags', 'BDT_common5_input_h3']
+
+FinalBDT Parameters:
+!H:!V:NTrees=797:BoostType=Grad:Shrinkage=0.0175:UseBaggedBoost:GradBaggingFraction=0.21:nCuts=18:MaxDepth=2:NegWeightTreatment=IgnoreNegWeightsInTraining
+
